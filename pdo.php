@@ -2,7 +2,7 @@
 function pdo($pagination = 0, $limit = 10, $columnOrderBy = "title asc"){
     try
     {
-        $db = new PDO('mysql:host=163.172.130.142:3310;dbname=sakila;charset=utf8', 'etudiant', 'CrERP29qwMNvcbnAMgLzW9CwuTC5eJHn');
+        $db = new PDO('mysql:host=mysql:3306;dbname=sakila;charset=utf8', 'user', 'password');
     }
     catch (Exception $e)
     {

@@ -9,9 +9,9 @@
     <div>
         <?php
         require_once "pdo.php";
-        $pagination = $_GET['pagination'] ?: 0;
-        $limit = $_GET['limit']?: 10;
-        $columnOrderBy = $_GET['column_order_by'] ?: 'title asc';
+        $pagination = $_GET['pagination'] ?? 0;
+        $limit = $_GET['limit'] ?? 10;
+        $columnOrderBy = $_GET['column_order_by'] ?? 'title asc';
         $recipes = pdo($pagination, $limit, $columnOrderBy);
         ?>
         <form action="" method="get" id="films">
